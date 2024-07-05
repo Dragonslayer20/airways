@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function validate_reg()
+{   
+
+	var uid=document.getElementById("uid").value;
+	if (uid==null || uid=="")
+	  {
+	  document.getElementById("uid").focus();
+	  alert("User name must be filled out");
+	  return false;
+	  }
+	
+	var upwd=document.getElementById("upwd").value;
+	if (upwd==null || upwd=="")
+	  {
+	  document.getElementById("upwd").focus();
+	  alert("Password must be filled out");
+	  return false;
+	  }
+}
+</script>
+
+<style type="text/css">
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:26px;
+	line-height:26px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+}
+.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.classname:active {
+	position:relative;
+	top:1px;
+}</style>
+
+</head>
+
+
+<h2 align="center">
+	Airline Login
+	<h2>
+		<HR color="chocolate">
+		<body bgcolor=white>
+			<form method=post action="login.jsp">
+				<table style="font-family: Georgia; font-weight: bold">
+					<tr>
+						<td align="right">User Id :</td>
+						<td><input type=text size=15 name="uid" id="uid"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type=password size=15 name="upwd" id="upwd"></td>
+					</tr>
+				</table>
+				<br>
+				<br> 
+				<input
+					type=submit class="classname" value="  Sign In  " onclick="return validate_reg()"/>&nbsp;&nbsp;<input type="reset" value="Clear" />
+			</form>
+			
+
+
+		</body>
+</html>
